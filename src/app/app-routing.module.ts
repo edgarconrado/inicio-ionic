@@ -24,6 +24,10 @@ const routes: Routes = [
     redirectTo: 'inicio',
     pathMatch: 'full'
   },
+  {
+    path: 'button',
+    loadChildren: () => import('./pages/button/button.module').then( m => m.ButtonPageModule)
+  },
 ];
 
 @NgModule({
