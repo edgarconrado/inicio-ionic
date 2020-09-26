@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FabPage implements OnInit {
 
   data = Array( 100 );
-  
+
   constructor() { }
 
   ngOnInit() {
