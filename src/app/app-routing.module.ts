@@ -52,6 +52,10 @@ const routes: Routes = [
     path: 'infiniti',
     loadChildren: () => import('./pages/infiniti/infiniti.module').then( m => m.InfinitiPageModule)
   },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+  },
 ];
 
 @NgModule({
