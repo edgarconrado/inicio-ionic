@@ -14,7 +14,7 @@ export class DataService {
   }
 
   getMenuOpt() {
-    return this.http.get<Componente>('../../assets/data/menu-opts.json');
+    return this.http.get<Componente[]>('../../assets/data/menu-opts.json');
   }
 
 }
