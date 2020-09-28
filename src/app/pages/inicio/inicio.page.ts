@@ -70,6 +70,11 @@ export class InicioPage implements OnInit {
       name: 'input Scroll',
       redirectTo: '/input'
     },
+    {
+      icon: 'list-outline',
+      name: 'list',
+      redirectTo: '/list'
+    },
   ];
 
   constructor() { }
