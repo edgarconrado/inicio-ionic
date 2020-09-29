@@ -87,15 +87,20 @@ const routes: Routes = [
     path: 'segment',
     loadChildren: () => import('./pages/segment/segment.module').then( m => m.SegmentPageModule)
   },
-  {
-    path: '',
-    redirectTo: 'inicio',
-    pathMatch: 'full'
-  },
+
   {
     path: 'slide',
     loadChildren: () => import('./pages/slide/slide.module').then( m => m.SlidePageModule)
   },
+  {
+    path: 'tab',
+    loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)
+  },
+  {
+    path: '',
+    redirectTo: 'inicio',
+    pathMatch: 'full'
+  }
 
 
 ];
