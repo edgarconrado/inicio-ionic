@@ -64,11 +64,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingPageModule)
   },
   {
-    path: '',
-    redirectTo: 'inicio',
-    pathMatch: 'full'
-  },
-  {
     path: 'modal',
     loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
   },
@@ -91,6 +86,15 @@ const routes: Routes = [
   {
     path: 'segment',
     loadChildren: () => import('./pages/segment/segment.module').then( m => m.SegmentPageModule)
+  },
+  {
+    path: '',
+    redirectTo: 'inicio',
+    pathMatch: 'full'
+  },
+  {
+    path: 'slide',
+    loadChildren: () => import('./pages/slide/slide.module').then( m => m.SlidePageModule)
   },
 
 ];
