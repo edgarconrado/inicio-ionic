@@ -100,6 +100,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'inicio',
     pathMatch: 'full'
+  },
+  {
+    path: 'toats',
+    loadChildren: () => import('./pages/toats/toats.module').then( m => m.ToatsPageModule)
   }
 
 
