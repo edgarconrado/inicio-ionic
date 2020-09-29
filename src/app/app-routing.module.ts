@@ -97,6 +97,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/slide/slide.module').then( m => m.SlidePageModule)
   },
 
+
 ];
 
 @NgModule({
